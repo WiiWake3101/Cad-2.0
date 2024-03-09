@@ -19,6 +19,7 @@ function Login() {
   }
 
   return (
+<main>
     <section className="container forms">
       <div className="form login">
         <div className="form-content">
@@ -66,6 +67,16 @@ function Login() {
         </div>
       </div>
     </section>
+    <div>
+      <button
+        onClick={() => {
+          signIn("google",{ callbackUrl: "/" });
+        }}
+      >
+        Log in
+      </button>
+    </div>
+<main/>
   );
 }
 
