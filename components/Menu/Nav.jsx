@@ -31,7 +31,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href="/login" id="inside">
-            <button>Log-In</button>
+            <button>Log-In/Log-Out</button>
           </Link>
         </li>
       </ul>
