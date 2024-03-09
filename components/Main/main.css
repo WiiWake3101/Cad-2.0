@@ -1,0 +1,56 @@
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.content {
+    text-align: center;
+}
+
+.typing_animation,
+.typing_animation_2 {
+    opacity: 0;
+}
+
+.typing_animation {
+    color: #fff;
+    font-size: 5rem;
+    animation: fadeIn 1s forwards;
+    z-index: 100%;
+}
+
+.typing_animation_2 {
+    color: #fff;
+    font-size: 2.5rem;
+    animation: fadeIn 1s forwards;
+    z-index: 100%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .typing_animation {
+        font-size: 1.5rem;
+    }
+
+    .typing_animation_2 {
+        font-size: 1.25rem;
+    }
+}
