@@ -21,6 +21,10 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
         />
+        <link
+          href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+          rel="stylesheet"
+        />
       </head>
       <body className={inter.className}>
         <Nav />
