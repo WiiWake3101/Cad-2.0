@@ -20,7 +20,7 @@ function Login() {
     <div>
       <button
         onClick={() => {
-          signIn({ callbackUrl: "/" });
+          signIn("google",{ callbackUrl: "/" });
         }}
       >
         Log in
