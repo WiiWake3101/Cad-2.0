@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Nav from "@/components/Menu/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
         rel="stylesheet"
         href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
       />
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
