@@ -1,20 +1,34 @@
 "use client";
 import { useSession, signOut, signIn, SessionProvider } from "next-auth/react";
 import "./login.css";
+
 function Login() {
   const { data: session, status } = useSession();
 
+  const handleLogout = async () => {
+    await signOut({ callbackUrl: "/" });
+  };
+
   if (session && session.user) {
     return (
-      <div className="mt-28">
-        <button
-          onClick={() => {
-            signOut({ callbackUrl: "/" });
-          }}
-        >
-          Log out
-        </button>
-      </div>
+      <main>
+        <section className="container forms">
+          <div className="form login">
+            <div className="form-content">
+              <header>
+                Logged in as{" "}
+                <strong style={{ fontWeight: "bold" }}>
+                  {session.user.name}
+                </strong>
+              </header>
+
+              <div className="field button-field">
+                <button onClick={handleLogout}>Log out</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     );
   }
 
@@ -61,7 +75,11 @@ function Login() {
               className="field google"
               onClick={() => signIn("google", { callbackUrl: "/" })}
             >
-              <img src="#" alt="" className="google-img" />
+              <img
+                src="https://authjs.dev/img/providers/google.svg"
+                alt=""
+                className="google-img"
+              />
               <span>Login with Google</span>
             </a>
           </div>
