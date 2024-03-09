@@ -15,7 +15,7 @@ export default function Nav() {
       <ul className="nav-links">
         <i className="uil uil-times navCloseBtn" onClick={toggleNav}></i>
         <li>
-          <Link href="/app" id="inside">
+          <Link href="/" id="inside">
             Home
           </Link>
         </li>
