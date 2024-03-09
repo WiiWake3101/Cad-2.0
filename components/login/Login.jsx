@@ -66,8 +66,34 @@ function Login() {
             </a>
           </div>
         </div>
+<<<<<<< HEAD
+        <div className="line"></div>
+        <div className="media-options">
+          <a href="#" className="field google" onClick={() => signIn()}>
+            <img
+              src="https://authjs.dev/img/providers/google.svg"
+              alt=""
+              className="google-img"
+            />
+            <span>Login with Google</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <div>
+      <button
+        onClick={() => {
+          signIn("google",{ callbackUrl: "/" });
+        }}
+      >
+        Log in
+      </button>
+    </div>
+<main/>
+=======
       </section>
     </main>
+>>>>>>> c2a731c30b5e1b4e6af7090fb9154d9583776d41
   );
 }
 
