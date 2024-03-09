@@ -56,7 +56,11 @@ function Login() {
         <div className="line"></div>
         <div className="media-options">
           <a href="#" className="field google" onClick={() => signIn()}>
-            <img src="#" alt="" className="google-img" />
+            <img
+              src="https://authjs.dev/img/providers/google.svg"
+              alt=""
+              className="google-img"
+            />
             <span>Login with Google</span>
           </a>
         </div>
