@@ -19,41 +19,54 @@ function Login() {
   }
 
   return (
-<main>
-    <section className="container forms">
-      <div className="form login">
-        <div className="form-content">
-          <header>Login</header>
-          <form>
-            <div className="field input-field">
-              <input type="email" placeholder="Email" className="input" />
-            </div>
-            <div className="field input-field">
-              <input
-                type="password"
-                placeholder="Password"
-                className="password"
-              />
-              <i className="bx bx-hide eye-icon"></i>
-            </div>
+    <main>
+      <section className="container forms">
+        <div className="form login">
+          <div className="form-content">
+            <header>Login</header>
+            <form>
+              <div className="field input-field">
+                <input type="email" placeholder="Email" className="input" />
+              </div>
+              <div className="field input-field">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="password"
+                />
+                <i className="bx bx-hide eye-icon"></i>
+              </div>
+              <div className="form-link">
+                <a href="#" className="forgot-pass">
+                  Forgot password?
+                </a>
+              </div>
+              <div className="field button-field">
+                <button>Login</button>
+              </div>
+            </form>
             <div className="form-link">
-              <a href="#" className="forgot-pass">
-                Forgot password?
-              </a>
+              <span>
+                Don't have an account?{" "}
+                <a href="/signup" className="link signup-link">
+                  Signup
+                </a>
+              </span>
             </div>
-            <div className="field button-field">
-              <button>Login</button>
-            </div>
-          </form>
-          <div className="form-link">
-            <span>
-              Don't have an account?{" "}
-              <a href="/signup" className="link signup-link">
-                Signup
-              </a>
-            </span>
+          </div>
+          <div className="line"></div>
+          <div className="media-options">
+            <a
+              href="#"
+              className="field google"
+              onClick={() => signIn("google", { callbackUrl: "/" })}
+            >
+              <img src="#" alt="" className="google-img" />
+              <span>Login with Google</span>
+            </a>
           </div>
         </div>
+<<<<<<< HEAD
         <div className="line"></div>
         <div className="media-options">
           <a href="#" className="field google" onClick={() => signIn()}>
@@ -77,6 +90,10 @@ function Login() {
       </button>
     </div>
 <main/>
+=======
+      </section>
+    </main>
+>>>>>>> c2a731c30b5e1b4e6af7090fb9154d9583776d41
   );
 }
 
