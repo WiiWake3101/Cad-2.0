@@ -20,7 +20,7 @@ export default function Nav() {
           </Link>
         </li>
         <li>
-          <Link href="/" id="inside">
+          <Link href="/services" id="inside">
             Services
           </Link>
         </li>
@@ -31,7 +31,7 @@ export default function Nav() {
         </li>
         <li>
           <Link href="/login" id="inside">
-            <button>Log-In/Log-Out</button>
+            <button>Log-In/Out</button>
           </Link>
         </li>
       </ul>
