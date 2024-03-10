@@ -9,7 +9,7 @@ const Content = () => {
           Welcome to LegalAssist
         </h2>
         <p className="typing_animation_2 text-sm sm:text-base" id="paragraph">
-          Launching your startup journey just got easier.
+          Embark on the adventure of entrepreneurship with ease.
         </p>
       </div>
     </div>
