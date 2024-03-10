@@ -63,7 +63,7 @@ function ServicesSection() {
 
 export default function Services() {
   return (
-    <div className="mt-10px">
+    <div className="mt-24">
       <ServicesSection />
     </div>
   );
